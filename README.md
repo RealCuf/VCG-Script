@@ -34,7 +34,7 @@ Easy To Generat With <a href="https://github.com/RealCuf/V2Ray-Config-Downloader
 :orange_circle: اضافه شدن ShadowSocks (به زودی)<br>
 :orange_circle: گرفتن پینگ از لینک ها (به زودی)<br>
 
-### Telegram Channel : [VCG Script](http://discordapp.com/users/767770096319201290)
+### Telegram Channel : [VCG Script](https://t.me/VCGScript)
 
 # آموزش
 
@@ -110,7 +110,7 @@ ENCODED_URLS = [
 
 💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
 
-💎 Channel  [VCG Script](http://discordapp.com/users/767770096319201290)
+💎 Channel  [VCG Script](https://t.me/VCGScript)
 
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
 
