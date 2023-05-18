@@ -110,7 +110,7 @@ ENCODED_URLS = [
 
 💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
 
-💎 Channel  [VCG Script](https://t.me/VCGScript)
+💎 Channel : [VCG Script](https://t.me/VCGScript)
 
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
 
@@ -122,4 +122,3 @@ ENCODED_URLS = [
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/RealCuf/V2Ray-Config-Generator.svg)](https://starchart.cc/RealCuf/V2Ray-Config-Generator)
-
