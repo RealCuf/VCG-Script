@@ -119,4 +119,4 @@ ENCODED_URLS = [
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/wizwizdev/wizwizxui-timebot.svg)](https://starchart.cc/wizwizdev/wizwizxui-timebot)
+[![Stargazers over time](https://starchart.cc/RealCuf/V2Ray-Config-Generator.svg)](https://starchart.cc/RealCuf/V2Ray-Config-Generator)
