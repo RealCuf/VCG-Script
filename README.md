@@ -115,10 +115,3 @@ ENCODED_URLS = [
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
 
 <br>
-<br>
-
-
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/RealCuf/V2Ray-Config-Generator.svg)](https://starchart.cc/RealCuf/V2Ray-Config-Generator)
