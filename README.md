@@ -6,7 +6,7 @@
   </a>
 </p>
 
-<h1 align="center"/>Welcome to VCG Script</h1>
+<h1 align="center"/>Welcome to VCG Scrit</h1>
 
 <p align="center">
 Easy To Generat With <a href="https://github.com/RealCuf/V2Ray-Config-Downloader">VCD Script</a> Easy Install With Few Clicks
