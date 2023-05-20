@@ -108,7 +108,7 @@ ENCODED_URLS = [
 
 ## Contact Developer
 
-💎 Discord : [Spicy#5566](http://discordapp.com/users/767770096319201290)
+💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
 
 💎 Channel : [VCG Script](https://t.me/VCGScript)
 
