@@ -6,7 +6,7 @@
   </a>
 </p>
 
-<h1 align="center"/>Welcome to VCG Scrpit</h1>
+<h1 align="center"/>Welcome to VCG Scrpit</h1
 
 <p align="center">
 Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Config Generator</a> Easy Install With Few Clicks
