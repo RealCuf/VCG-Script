@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/RealCuf/V2Ray-Config-Downloader" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/iDehghan/VCG-Script" target="_blank" rel="noopener noreferrer">
     <picture>
       <img width="200" height="200" src="https://i.ibb.co/khZMnP5/R-Copy.png">
     </picture>
@@ -9,10 +9,10 @@
 <h1 align="center"/>Welcome to VCG Scrpit</h1>
 
 <p align="center">
-Easy To Generat With <a href="https://github.com/RealCuf/V2Ray-Config-Downloader">VCD Script</a> Easy Install With Few Clicks
+Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Config Generator</a> Easy Install With Few Clicks
 </p>
 
-<p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include vmess , Vless , and Trojan.</p>
+<p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include ( Vmess & Vless & Trojan & ShadowSocks )</p>
 <p align="center">اینترنت برای همه ؛ یا هیچ‌کس!</p>
 <hr>
 
@@ -26,40 +26,42 @@ Easy To Generat With <a href="https://github.com/RealCuf/V2Ray-Config-Downloader
 
 # امکانات
 :green_circle: متن باز و قابل ویرایش <br>
-:green_circle: ایجاد کانفیگ بدون محدودیت <br>
 :green_circle: اعمال محدودیت در تعداد ساخت کانفیگ<br>
 :green_circle: امکان ذخیره کانفیگ ها و ساخت QR Code<br>
 :green_circle: تغییر لینک سابسکرایبشن به لینک دلخواه شما<br>
-:green_circle: پشتیبانی از Vmess , Vless , Trojan<br>
-:orange_circle: اضافه شدن ShadowSocks (به زودی)<br>
-:orange_circle: گرفتن پینگ از لینک ها (به زودی)<br>
+:green_circle: پشتیبانی از Vmess , Vless , Trojan , ShadowSocks<br>
+:green_circle: گرفتن پینگ و تست کانفیگ ها<br>
+
 
 ### Telegram Channel : [VCG Script](https://t.me/VCGScript)
 
 # آموزش
 
-
-- فایل ZIP دانلود شده را در دسکتاپ استخراج کنید
-- نصب Python3
-- نصب VsCode
 ## پیش نیاز مرحله اول
-- وارد CMD شوید و برای استفاده کافیست دستورات زیر را وارد کنید
+- نصب داشتن Git , Python
+- وارد ترمینال شوید و برای دانلود اسکریپت کافیست دستور زیر رو وارد کنید
 ```
-$ cd desktop/VCG-Script
-$ pip install -r Requirements.txt
+git clone https://github.com/iDehghan/VCG-Script.git
 ```
-## اجرای اسکریپت مرحله دوم
-- پس از نصب کتابخانه ها دستور پایین را وارد کنید
+- در C:\Users\User میتونید به سورس کد دسترسی داشته باشید
+>  
+## نصب کتابخانه مرحله دوم
+- پس از نصب ، دستورات پایین رو وارد کنید
 ```
-$ python3 main.py
+cd VCG-Script
 ```
-## آشنایی با محیط مرحله سوم
-<a><img alt="VCG" src="https://i.ibb.co/khjHZfH/image.png"></a>
-- وارد محیط اسکریپت شدید ، جدول زیر را مطالعه کنید
-> میتونید برای ساخت کانفیگ ها از دستور زیر و در قسمت OPTIONS از توضیحات جدول استفاده کنید 
-````
-$ python3 main.py [OPTIONS]
-````
+```
+pip install -r requirements.txt
+```
+## اجرای اسکریپت مرحله سوم
+- پس از نصب کامل کتابخانه ها ، برای اجرای اسکریپت دستور پایین رو وارد کنید
+```
+python main.py
+```
+## آشنایی با محیط مرحله چهارم
+<a><img alt="VCG" src="https://i.ibb.co/0cSmRJc/image.png"></a>
+- وارد محیط اسکریپت شدید ، جدول زیر رو مطالعه کنید
+- میتونید برای ساخت کانفیگ ها از دستور مورد نظر و در قسمت OPTIONS از توضیحات جدول / اسکریپت استفاده کنید
 <br>
 
 |Number of configs|Vmess configs only|Vless configs only|Trojan configs only|Save configs to a file|Save QR codes|
@@ -70,22 +72,35 @@ $ python3 main.py [OPTIONS]
 <br>
 
 - بطور مثال
-> معنی دستور : 10 عدد کانفیگ تروجان به همراه ذخیره کانفیگ ها + ساخت QR Code 
-
+- معنی دستور : 10 عدد کانفیگ تروجان به همراه ذخیره کانفیگ ها + ساخت QR Code 
 ````
-$ python3 main.py -n 10 -t -s -q
-$ python3 main.py -number 10 -trojan -save -qr
+python main.py -n 10 -t -s -q
 ````
-## ساخت کانفیگ مرحله چهارم
+## ساخت کانفیگ مرحله پنجم
 - سپس اطلاعات خواسته شده را وارد کنید و اینتر کنید تا مراحل ساخت انجام شود (فیلترشکن باید روشن باشد)
 
-<a><img alt="VCG" src="https://i.ibb.co/H7fYhvM/image-2023-05-18-18-35-54.png"></a>
-- پس از تکمیل ساخت کانفیگ ها وارد فایل VCG-Script بشید 
-- در فایل Config ، کانفیگ ها در فایل txt ذخیره شدند
-- در فایل QR-Code ، کیو آر کد کانفیگ ها ذخیره شدند
+<a><img alt="VCG" src="https://i.ibb.co/nM5bZWs/Screenshot-2023-05-31-214717.png"></a>
+
+## استفاده از کانفیگ و QRCODE ها مرحله ششم
+- پس از تکمیل ساخت برای دیدن کانفیگ ها از دستورات زیر استفاده کنید
+````
+start conf
+````
+````
+start qr
+````
+- در فولدر Conf ، کانفیگ ها در فایل txt ذخیره شدند
+- در فولدر QR ، کیو آر کد کانفیگ ها ذخیره شدند
 - حالا میتونید به راحتی ازشون استفاده کنید 🎁
 
-## ویرایش سورس مرحله پنجم
+## پینگ گرفتن مرحله هفتم
+- برای پینگ گرفتن از فایل txt که حاوی تعدادی کانفیگ هست ، از دستور زیر استفاده کنید
+````
+python pingtester.py
+````
+- سپس روی Select File بزنید و در فولدر conf ، فایل txt مورد نظرتون رو انتخاب کنید
+
+## ویرایش سورس مرحله هشتم
 - در بخش های DECODED_URLS , ENCODED_URLS میتونید لینک سابسکرایبشن دلخواه خودتون رو قرار بدید!
 ```python
 # URLs for configs not encoded in a base64 string
