@@ -12,7 +12,7 @@
 Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Config Generator</a> Easy Install With Few Clicks
 </p>
 
-<p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include ( Vmess & Vless & Trojan & ShadowSocks )</p>
+<p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include <br>( Vmess & Vless & Trojan & ShadowSocks )</p>
 <p align="center">اینترنت برای همه ؛ یا هیچ‌کس!</p>
 <p align="center">
 <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/iDehghan/VCG-Script?color=white&label=View&style=for-the-badge">
