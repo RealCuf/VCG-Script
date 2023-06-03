@@ -15,7 +15,7 @@ Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Conf
 <p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include <br>( Vmess & Vless & Trojan & ShadowSocks )</p>
 <p align="center">اینترنت برای همه ؛ یا هیچ‌کس!</p>
 <p align="center">
-  <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/iDehghan/VCG-Script/total?color=white&label=Downloads">
+  <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/iDehghan/VCG-Script/total">
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/iDehghan/VCG-Script?color=white&label=Release">
   <img alt="GitHub" src="https://img.shields.io/github/license/iDehghan/VCG-Script?color=white&label=License">
 </p>
