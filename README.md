@@ -16,7 +16,7 @@ Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Conf
 <p align="center">اینترنت برای همه ؛ یا هیچ‌کس!</p>
 <div align=center>
   
-![GitHub all releases](https://img.shields.io/github/downloads/iDehghan/VCG-Script/total?color=white&style=for-the-badge)
+<!-- ![GitHub all releases](https://img.shields.io/github/downloads/iDehghan/VCG-Script/total?color=white&style=for-the-badge) -->
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/iDehghan/VCG-Script?color=white&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/iDehghan/VCG-Script?color=white&style=for-the-badge)
 
