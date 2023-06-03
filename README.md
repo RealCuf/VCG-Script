@@ -130,8 +130,6 @@ ENCODED_URLS = [
 
 💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
 
-💎 Channel : [VCG Script](https://t.me/VCGScript)
-
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
 
 <br>
