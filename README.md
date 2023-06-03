@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/iDehghan/VCG-Script" target="_blank" rel="noopener noreferrer">
     <picture>
-      <img width="200" height="200" src="https://i.ibb.co/R6jDNV8/v-logo-blue-3.png">
+      <img width="200" height="200" src="https://i.ibb.co/mvj4J7B/R.png">
     </picture>
   </a>
 </p>
