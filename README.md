@@ -130,6 +130,11 @@ ENCODED_URLS = [
 
 💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
 
+<a href="http://www.coffeete.ir/Dehghan"><img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:180px;"/></a>
+
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
 
-<br>
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/iDehghan/VCG-Script.svg)](https://starchart.cc/iDehghan/VCG-Script)
