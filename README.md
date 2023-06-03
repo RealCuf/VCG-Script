@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/iDehghan/VCG-Script" target="_blank" rel="noopener noreferrer">
     <picture>
-      <img width="200" height="200" src="https://i.ibb.co/khZMnP5/R-Copy.png">
+      <img width="200" height="200" src="https://i.ibb.co/R6jDNV8/v-logo-blue-3.png">
     </picture>
   </a>
 </p>
@@ -15,7 +15,7 @@ Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Conf
 <p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include <br>( Vmess & Vless & Trojan & ShadowSocks )</p>
 <p align="center">اینترنت برای همه ؛ یا هیچ‌کس!</p>
 <p align="center">
-<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/iDehghan/VCG-Script?color=white&label=View&style=for-the-badge">
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/iDehghan/VCG-Script/total?color=white&style=for-the-badge">
 <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/iDehghan/VCG-Script?color=white&style=for-the-badge">
 <img alt="GitHub" src="https://img.shields.io/github/license/iDehghan/VCG-Script?color=white&style=for-the-badge">
 </p>
