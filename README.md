@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/iDehghan/VCG-Script" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/RealCuf/VCG-Script" target="_blank" rel="noopener noreferrer">
     <picture>
       <img width="200" height="200" src="https://i.postimg.cc/kXh9Y0TD/v-logo-yellow.png">
     </picture>
@@ -9,7 +9,7 @@
 <h1 align="center"/>Welcome to VCG Scrpit</h1>
 
 <p align="center">
-Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Config Generator</a> Easy Install With Few Clicks
+Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Config Generator</a> Easy Install With Few Clicks
 </p>
 
 <p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include <br>( Vmess & Vless & Trojan & ShadowSocks )</p>
@@ -17,8 +17,8 @@ Easy To Generat With <a href="https://github.com/iDehghan/VCG-Script">V2Ray Conf
 <div align=center>
   
 <!-- ![GitHub all releases](https://img.shields.io/github/downloads/iDehghan/VCG-Script/total?color=white&style=for-the-badge) -->
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/iDehghan/VCG-Script?color=white&style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/iDehghan/VCG-Script?color=white&style=for-the-badge)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/RealCuf/VCG-Script?color=white&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/RealCuf/VCG-Script?color=white&style=for-the-badge)
 
 </div>
 <hr>
@@ -132,7 +132,7 @@ ENCODED_URLS = [
 
 💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
 
-<a href="http://www.coffeete.ir/Dehghan"><img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:180px;"/></a>
+<a href="http://www.coffeete.ir/RealCuf"><img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:180px;" /></a>
 
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
 
