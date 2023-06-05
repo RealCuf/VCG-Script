@@ -48,7 +48,7 @@ Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Confi
 - نصب داشتن Git , Python
 - وارد ترمینال شوید و برای دانلود اسکریپت کافیست دستور زیر رو وارد کنید
 ```
-git clone https://github.com/iDehghan/VCG-Script.git
+git clone https://github.com/RealCuf/VCG-Script.git
 ```
 - در C:\Users\User میتونید به سورس کد دسترسی داشته باشید
 >  
@@ -88,7 +88,7 @@ python main.py -n 10 -t -s -q
 
 <a><img alt="VCG" src="https://i.ibb.co/Fxz0Jsp/Screenshot-2023-06-05-110312.png"></a>
 
-## استفاده از کانفیگ و QRCODE ها مرحله ششم
+## استفاده از Config و QRCODE ها مرحله ششم
 - پس از تکمیل ساخت برای دیدن کانفیگ ها از دستورات زیر استفاده کنید
 ````
 start conf
@@ -107,7 +107,13 @@ python pingtester.py
 ````
 - سپس روی Select File بزنید و در فولدر conf ، فایل txt مورد نظرتون رو انتخاب کنید
 
-## ویرایش سورس مرحله هشتم
+## آپدیت مرحله هشتم
+- برای آپدیت اسکریپت وارد محل نصب شوید (C:\Users\System.name) و سپس فولدر VCG-Script را پاک کنید و مجدد از دستور نصب استفاده کنید
+> قبل از آپدیت از فولدر های conf و qr بک اپ بگیرید
+```
+git clone https://github.com/RealCuf/VCG-Script.git
+``` 
+## ویرایش سورس مرحله نهم
 - در بخش های DECODED_URLS , ENCODED_URLS میتونید لینک سابسکرایبشن دلخواه خودتون رو قرار بدید!
 ```python
 # URLs for configs not encoded in a base64 string
