@@ -46,14 +46,14 @@ Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Confi
 
 ## پیش نیاز مرحله اول
 - نصب داشتن Git , Python
-- وارد ترمینال شوید و برای دانلود اسکریپت کافیست دستور زیر رو وارد کنید
+- وارد ترمینال شوید و برای دانلود اسکریپت کافیست دستور زیر را وارد کنید
 ```
 git clone https://github.com/RealCuf/VCG-Script.git
 ```
-- در C:\Users\User میتونید به سورس کد دسترسی داشته باشید
+- در C:\Users\System.name میتونید به سورس کد دسترسی داشته باشید
 >  
 ## نصب کتابخانه مرحله دوم
-- پس از نصب ، دستورات پایین رو وارد کنید
+- پس از نصب ، دستورات پایین را وارد کنید
 ```
 cd VCG-Script
 ```
@@ -108,7 +108,8 @@ python pingtester.py
 - سپس روی Select File بزنید و در فولدر conf ، فایل txt مورد نظرتون رو انتخاب کنید
 
 ## آپدیت مرحله هشتم
-- برای آپدیت اسکریپت وارد محل نصب شوید (C:\Users\System.name) و سپس فولدر VCG-Script را پاک کنید و مجدد از دستور نصب استفاده کنید
+- برای آپدیت اسکریپت وارد محل نصب شوید (C:\Users\System.name) و سپس فولدر VCG-Script را پاک کنید
+- مجدد از دستور نصب استفاده کنید
 > قبل از آپدیت از فولدر های conf و qr بک اپ بگیرید
 ```
 git clone https://github.com/RealCuf/VCG-Script.git
