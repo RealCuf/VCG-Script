@@ -66,7 +66,7 @@ pip install -r requirements.txt
 python main.py
 ```
 ## آشنایی با محیط مرحله چهارم
-<a><img alt="VCG" src="https://i.ibb.co/0cSmRJc/image.png"></a>
+<a><img alt="VCG" src="https://i.ibb.co/fvSQGfW/image.png"></a>
 - وارد محیط اسکریپت شدید ، جدول زیر رو مطالعه کنید
 - میتونید برای ساخت کانفیگ ها از دستور مورد نظر و در قسمت OPTIONS از توضیحات جدول / اسکریپت استفاده کنید
 <br>
@@ -86,7 +86,7 @@ python main.py -n 10 -t -s -q
 ## ساخت کانفیگ مرحله پنجم
 - سپس اطلاعات خواسته شده را وارد کنید و اینتر کنید تا مراحل ساخت انجام شود (فیلترشکن باید روشن باشد)
 
-<a><img alt="VCG" src="https://i.ibb.co/nM5bZWs/Screenshot-2023-05-31-214717.png"></a>
+<a><img alt="VCG" src="https://i.ibb.co/Fxz0Jsp/Screenshot-2023-06-05-110312.png"></a>
 
 ## استفاده از کانفیگ و QRCODE ها مرحله ششم
 - پس از تکمیل ساخت برای دیدن کانفیگ ها از دستورات زیر استفاده کنید
