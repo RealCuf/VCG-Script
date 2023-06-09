@@ -10,13 +10,36 @@ import qrcode
 import requests
 from rich import print as rprint
 from rich.progress import track
+import argparse
 
 # URLs for configs not encoded in a base64 string
 
 DECODED_URLS = [
-    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
     "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all",
+    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/vmess.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/trojan.txt",
     "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/v2ray/v2raysub",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub1.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub2.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub3.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub3.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub5.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub6.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub7.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Sub8.txt",
+]
+
+# URLs for configs encoded in a base64 string
+
+ENCODED_URLS = [
+    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
+    "https://github.xiaoku666.tk/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/vless.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/ss.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/ssr.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/ss.txt",
+    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/ssr.txt",
     "https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/v2ray.config.txt",
     "https://raw.githubusercontent.com/vpei/Free-Node-Merge/main/o/node.txt",
     "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all",
@@ -25,18 +48,6 @@ DECODED_URLS = [
     "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://raw.fastgit.org/ripaojiedian/freenode/main/sub",
-]
-
-# URLs for configs encoded in a base64 string
-
-ENCODED_URLS = [
-    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/vmess.txt",
-    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/vless.txt",
-    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/trojan.txt",
-    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/ss.txt",
-    "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/ssr.txt",
-    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
-    "https://github.xiaoku666.tk/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
 ]
 
 logo = r"""
@@ -53,6 +64,21 @@ NOW = datetime.datetime.now()
 config_folder = "./conf"
 QR_DIR = "./qr"
 
+def check_reality(urls):
+    for url in urls:
+        response = requests.head(url)
+        if response.status_code == 200:
+            print(f"The link {url} is reachable and valid.")
+        else:
+            print(f"The link {url} is not reachable or invalid.")
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-e", "--reality", action="store_true", help="Check reality of URLs")
+    args = parser.parse_args()
+
+    if args.check_reality:
+        check_reality(DECODED_URLS + ENCODED_URLS)
 
 def get_config(url):
     """Get config from URL."""
@@ -76,7 +102,7 @@ def decode_base64(string):
         return None
 
 
-def get_cleaned_configs(vmess=False, vless=False, trojan=False, shadowsocks=False):
+def get_cleaned_configs(vmess=False, vless=False, trojan=False, shadowsocks=False, shadowsocksr=False):
     """Get cleaned configs."""
 
     configs = []
@@ -99,6 +125,8 @@ def get_cleaned_configs(vmess=False, vless=False, trojan=False, shadowsocks=Fals
         configs = [config for config in configs if "trojan" in config]
     elif shadowsocks:
         configs = [config for config in configs if "shadowsocks" in config]
+    elif shadowsocks:
+        configs = [config for config in configs if "shadowsocksr" in config]
     return configs
 
 
@@ -161,18 +189,21 @@ def run_code():
     if len(sys.argv) == 1:
         rprint("[magenta]------------------------------------------------------------▶[/magenta]")
         rprint(logo)
-        rprint("\n[bold cyan]V E R S I O N : [cyan][[/cyan][yellow]v 1.3.0[yellow][cyan]][/cyan] [bold green]GitHub : [cyan]https://github.com/RealCuf[/cyan][/bold green]\n")
+        rprint("\n[bold cyan]V E R S I O N : [cyan][[/cyan][yellow]v 1.5.1[yellow][cyan]][/cyan] [bold green]GitHub : [cyan]https://github.com/RealCuf[/cyan][/bold green]\n")
         rprint("[bold cyan]U S A G E : [/bold cyan][bold magenta]python main.py[/bold magenta] [cyan][[/cyan][yellow]O P T I O N S[yellow][cyan]][/cyan]\n")
         rprint("[bold cyan]O P T I O N S : [/bold cyan]\n")
-        rprint("• [yellow]-n[/yellow][blue]  --number[/blue]      〔 [green]Number of configs - Default : 5 [/green]")
-        rprint("• [yellow]-v[/yellow][blue]  --vmess [/blue]      〔 [green]Vmess configs only[/green]")
-        rprint("• [yellow]-l[/yellow][blue]  --vless [/blue]      〔 [green]Vless configs only[/green]")
-        rprint("• [yellow]-t[/yellow][blue]  --trojan[/blue]      〔 [green]Trojan configs only[/green]")
-        rprint("• [yellow]-h[/yellow][blue]  --shadowsocks[/blue] 〔 [green]ShadowSocks configs only[/green]")
-        rprint("• [yellow]-s[/yellow][blue]  --save  [/blue]      〔 [green]Save configs to a file[/green]")
-        rprint("• [yellow]-q[/yellow][blue]  --qr    [/blue]      〔 [green]Save QR codes[/green]")
-        rprint("• [yellow]-p[/yellow][blue]  --ping  [/blue]      〔 [green]Ping from configs[/green]\n")
-        rprint("[bold cyan]E X A M P L E : [/bold cyan][bold magenta]python main.py[/bold magenta] [yellow]-n 5 -t -s -q[/yellow]\n")
+        rprint("• [yellow]-n[/yellow][blue]  --number[/blue]            〔 [green]Number of configs - Default : 5 [/green]")
+        rprint("• [yellow]-v[/yellow][blue]  --vmess [/blue]            〔 [green]Vmess configs only[/green]")
+        rprint("• [yellow]-l[/yellow][blue]  --vless [/blue]            〔 [green]Vless configs only[/green]")
+        rprint("• [yellow]-t[/yellow][blue]  --trojan[/blue]            〔 [green]Trojan configs only[/green]")
+        rprint("• [yellow]-h[/yellow][blue]  --shadowsocks[/blue]       〔 [green]ShadowSocks configs only[/green]")
+        rprint("• [yellow]-r[/yellow][blue]  --shadowsocksr[/blue]      〔 [green]ShadowSocksR configs only[/green]")
+        rprint("• [yellow]-s[/yellow][blue]  --save  [/blue]            〔 [green]Save configs to a file[/green]")
+        rprint("• [yellow]-q[/yellow][blue]  --qr    [/blue]            〔 [green]Save QR codes[/green]")
+        rprint("• [yellow]-e[/yellow][blue]  --reality    [/blue]       〔 [green]Check reality[/green]")
+        rprint("• [yellow]-p[/yellow][blue]  --ping  [/blue]            〔 [green]Ping from configs[/green]\n")
+        rprint("[bold cyan]E X A M P L E : [/bold cyan][bold magenta]python main.py[/bold magenta] [yellow]-n 5 -t -s -q[/yellow]")
+        rprint("[bold cyan]P I N G : [/bold cyan][bold magenta]python main.py[/bold magenta] [yellow]-p[/yellow]\n")
         rprint("[magenta]------------------------------------------------------------▶[/magenta]")
         sys.exit(1)
 
@@ -183,7 +214,9 @@ def run_code():
     elif "-t" in sys.argv or "--trojan" in sys.argv:
         configs = get_cleaned_configs(trojan=True)
     elif "-h" in sys.argv or "--shadowsocks" in sys.argv:
-        configs = get_cleaned_configs(trojan=True)
+        configs = get_cleaned_configs(shadowsocks=True)
+    elif "-r" in sys.argv or "--shadowsocksr" in sys.argv:
+        configs = get_cleaned_configs(shadowsocksr=True)
     else:
         configs = get_cleaned_configs()
 
