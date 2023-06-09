@@ -5,5 +5,6 @@ rich==13.3.1
 datetime==5.1
 ping3==4.0.4
 pyperclip==1.8.2
+argparse==1.4
 
 # pip install -r requirements.txt
