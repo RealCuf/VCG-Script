@@ -3,6 +3,7 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
+from tkinter import messagebox
 from ping3 import ping
 import os
 import base64
@@ -35,6 +36,9 @@ def extract_proxy_info(filepath):
             elif line.startswith('ss://'):
                 config_type = 'SS'
                 proxy_info = line[9:]
+            elif line.startswith('ss://'):
+                config_type = 'SSR'
+                proxy_info = line[9:]
             else:
                 continue
 
@@ -59,25 +63,28 @@ def ping_proxy(filepath=None):
         current_file = filepath
 
     root = tk.Tk()
-    root.title('Ping Results')
+    root.title('Ping Results v1.2.0')
 
-    refresh_button = tk.Button(root, text='Refresh', command=lambda: refresh_results(root))
+    style = ttk.Style()
+    style.theme_use('clam')
+
+    refresh_button = ttk.Button(root, text='Refresh', command=lambda: refresh_results(root))
     refresh_button.pack(pady=10)
 
-    result_frame = tk.Frame(root)
+    result_frame = ttk.Frame(root)
     result_frame.pack()
 
     for proxy in proxies:
         config_type, address, port, proxy_info = proxy
-        result = f'{config_type} Config (Domain or IP : {address}): '
+        result = f'{config_type} Config (Domain or IP: {address}): '
 
-        label = tk.Label(result_frame, text=result)
+        label = ttk.Label(result_frame, text=result)
         label.pack()
 
-        response_label = tk.Label(result_frame, text="Pinging...")
+        response_label = ttk.Label(result_frame, text="Pinging...")
         response_label.pack()
 
-        copy_button = tk.Button(result_frame, text="Copy", command=lambda txt=proxy_info: copy_to_clipboard(txt))
+        copy_button = ttk.Button(result_frame, text="Copy", command=lambda txt=proxy_info: copy_to_clipboard(txt))
         copy_button.pack()
 
         threading.Thread(target=ping_proxy_async, args=(address, response_label)).start()
@@ -97,7 +104,6 @@ def ping_proxy_async(address, response_label):
             response_label.config(text="No response received")
     except Exception as e:
         response_label.config(text=f"Error: {str(e)}")
-        
 
 def refresh_results(root):
     root.destroy()
@@ -108,25 +114,27 @@ def copy_to_clipboard(txt):
 
 def create_gui():
     root = tk.Tk()
-    root.configure(bg='black')
-    root.title('VCG Pinger')
+    root.title('VCG Pinger v1.2.0')
+
+    style = ttk.Style()
+    style.theme_use('clam')
 
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
 
     window_width = 300
-    window_height = 50
+    window_height = 55
     x = (screen_width - window_width) // 2
     y = (screen_height - window_height) // 2
 
     root.geometry(f'{window_width}x{window_height}+{x}+{y}')
 
-    select_button = tk.Button(root, text='Select File', command=select_file)
+    select_button = ttk.Button(root, text='Select File', command=select_file)
     select_button.pack(pady=10)
 
     root.mainloop()
 
-
-create_gui()
+if __name__ == "__main__":
+    create_gui()
 
 # GitHub : https://github.com/RealCuf
