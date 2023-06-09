@@ -11,6 +11,7 @@ import requests
 from rich import print as rprint
 from rich.progress import track
 import argparse
+import urllib.parse
 
 # URLs for configs not encoded in a base64 string
 
@@ -71,6 +72,16 @@ def check_reality(urls):
             print(f"The link {url} is reachable and valid.")
         else:
             print(f"The link {url} is not reachable or invalid.")
+
+def check_reality(link):
+    parsed_url = urllib.parse.urlparse(link)
+    query_params = urllib.parse.parse_qs(parsed_url.query)
+    
+    if 'security' in query_params and 'encryption' in query_params:
+        if query_params['security'][0] == 'reality' and query_params['encryption'][0] != 'none':
+            return True
+    
+    return False
 
 def main():
     parser = argparse.ArgumentParser()
