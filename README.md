@@ -115,7 +115,7 @@ start qr
 python main.py -p
 ````
 ````
-python main.py -p
+python pingtester.py
 ````
 <a><img alt="VCG" src="https://i.ibb.co/BTdbNLf/image.png"></a>
 - سپس روی Select File بزنید و در فولدر conf ، فایل txt مورد نظرتون رو انتخاب کنید
