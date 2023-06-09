@@ -12,7 +12,7 @@
 Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Config Generator</a> Easy Install With Few Clicks
 </p>
 
-<p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include <br>( Vmess & Vless & Trojan & ShadowSocks )</p>
+<p align="center">This Python script downloads free V2Ray configs , which are updated everyday and include <br>( Vmess & Vless & Trojan & ShadowSocks & ShadowSocksR )</p>
 <p align="center">اینترنت برای همه ؛ یا هیچ‌کس!</p>
 <div align=center>
   
@@ -33,11 +33,12 @@ Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Confi
 
 # امکانات
 :green_circle: متن باز و قابل ویرایش <br>
+:green_circle: تست و پینگ کانفیگ ها<br>
+:green_circle: استخراج کانفیگ های Reality <br>
 :green_circle: اعمال محدودیت در تعداد ساخت کانفیگ<br>
 :green_circle: امکان ذخیره کانفیگ ها و ساخت QR Code<br>
 :green_circle: تغییر لینک سابسکرایبشن به لینک دلخواه شما<br>
-:green_circle: پشتیبانی از Vmess , Vless , Trojan , ShadowSocks<br>
-:green_circle: گرفتن پینگ و تست کانفیگ ها<br>
+:green_circle: پشتیبانی از Vmess , Vless , Trojan , ShadowSocks , ShadowSocksR<br>
 
 
 ### Telegram Channel : [VCG Script](https://t.me/VCGScript)
@@ -66,7 +67,7 @@ pip install -r requirements.txt
 python main.py
 ```
 ## آشنایی با محیط مرحله چهارم
-<a><img alt="VCG" src="https://i.ibb.co/fvSQGfW/image.png"></a>
+<a><img alt="VCG" src="https://i.ibb.co/nr837KD/image.png"></a>
 - وارد محیط اسکریپت شدید ، جدول زیر رو مطالعه کنید
 - میتونید برای ساخت کانفیگ ها از دستور مورد نظر و در قسمت OPTIONS از توضیحات جدول / اسکریپت استفاده کنید
 <br>
@@ -86,9 +87,17 @@ python main.py -n 10 -t -s -q
 ## ساخت کانفیگ مرحله پنجم
 - سپس اطلاعات خواسته شده را وارد کنید و اینتر کنید تا مراحل ساخت انجام شود (فیلترشکن باید روشن باشد)
 
-<a><img alt="VCG" src="https://i.ibb.co/Fxz0Jsp/Screenshot-2023-06-05-110312.png"></a>
+<a><img alt="VCG" src="https://i.ibb.co/V918gV3/Screenshot-2023-06-09-122424.png"></a>
 
-## استفاده از Config و QRCODE ها مرحله ششم
+## قابلیت Reality مرحله ششم
+- با اضافه کردن دستور زیر میتونید کانفیگ هایی که دارای پارامتر های Reality هستند را استخراج کنید
+> ممکنه زیاد دقیق نباشه و به درستی انجام نشه
+````
+python main.py -n 5 -l -s -q -e
+````
+- معنی دستور : 5 عدد کانفیگ وی لس که Reality دارند به همراه ذخیره کانفیگ ها + ساخت QR Code 
+ 
+## استفاده از Config و QRCODE ها مرحله هفتم
 - پس از تکمیل ساخت برای دیدن کانفیگ ها از دستورات زیر استفاده کنید
 ````
 start conf
@@ -100,21 +109,25 @@ start qr
 - در فولدر QR ، کیو آر کد کانفیگ ها ذخیره شدند
 - حالا میتونید به راحتی ازشون استفاده کنید 🎁
 
-## پینگ گرفتن مرحله هفتم
+## پینگ گرفتن مرحله هشتم
 - برای پینگ گرفتن از فایل txt که حاوی تعدادی کانفیگ هست ، از دستور زیر استفاده کنید
 ````
-python pingtester.py
+python main.py -p
 ````
+````
+python main.py -p
+````
+<a><img alt="VCG" src="https://i.ibb.co/BTdbNLf/image.png"></a>
 - سپس روی Select File بزنید و در فولدر conf ، فایل txt مورد نظرتون رو انتخاب کنید
 
-## آپدیت مرحله هشتم
+## آپدیت مرحله نهم
 - برای آپدیت اسکریپت وارد محل نصب شوید (C:\Users\System.name) و سپس فولدر VCG-Script را پاک کنید
 - مجدد از دستور نصب استفاده کنید
 > قبل از آپدیت از فولدر های conf و qr بک اپ بگیرید
 ```
 git clone https://github.com/RealCuf/VCG-Script.git
 ``` 
-## ویرایش سورس مرحله نهم
+## ویرایش سورس مرحله دهم
 - در بخش های DECODED_URLS , ENCODED_URLS میتونید لینک سابسکرایبشن دلخواه خودتون رو قرار بدید!
 ```python
 # URLs for configs not encoded in a base64 string
