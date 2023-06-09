@@ -117,8 +117,9 @@ python main.py -p
 ````
 python pingtester.py
 ````
-<a><img alt="VCG" src="https://i.ibb.co/BTdbNLf/image.png"></a>
 - سپس روی Select File بزنید و در فولدر conf ، فایل txt مورد نظرتون رو انتخاب کنید
+
+<a><img alt="VCG" src="https://i.ibb.co/BTdbNLf/image.png"></a>
 
 ## آپدیت مرحله نهم
 - برای آپدیت اسکریپت وارد محل نصب شوید (C:\Users\System.name) و سپس فولدر VCG-Script را پاک کنید
