@@ -72,10 +72,10 @@ python main.py
 - میتونید برای ساخت کانفیگ ها از دستور مورد نظر و در قسمت OPTIONS از توضیحات جدول / اسکریپت استفاده کنید
 <br>
 
-|Number of configs|Vmess configs only|Vless configs only|Trojan configs only|Save configs to a file|Save QR codes|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|-n| -v| -l| -t| -s| -q|
-|-number| -vmess| -vless| -trojan| -save| -qr|
+|Number of configs|Vmess configs only|Vless configs only|Trojan configs only|Save configs to a file|Save QR codes|Reality Checker|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|-n| -v| -l| -t| -s| -q| -e|
+|--number| --vmess| --vless| --trojan| --save| --qr| --reality|
 
 <br>
 
