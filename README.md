@@ -160,4 +160,4 @@ ENCODED_URLS = [
 
 ## Stargazers over time
 ![GitHub View](https://views.whatilearened.today/views/github/RealCuf/VCG-Script.svg)
-[![Stargazers over time](https://starchart.cc/iDehghan/VCG-Script.svg)](https://starchart.cc/iDehghan/VCG-Script)
+[![Stargazers over time](https://starchart.cc/RealCuf/VCG-Script.svg)](https://starchart.cc/RealCuf/VCG-Script)
