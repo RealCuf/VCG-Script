@@ -153,6 +153,8 @@ ENCODED_URLS = [
 
 💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
 
+💎 Twitter : [CybrDriver](https://twitter.com/CybrDriver)
+
 <a href="http://www.coffeete.ir/RealCuf"><img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:180px;"/></a>
 
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
