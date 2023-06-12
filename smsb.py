@@ -23,6 +23,10 @@ def logo() :
 class color: 
     GREEN = '\033[92m'
     RED = '\033[91m'
+   
+class color: 
+    GREEN = '\033[92m'
+    RED = '\033[91m'
 
 # define our clear function
 def clear():
