@@ -3,15 +3,15 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
-from tkinter import messagebox
 from ping3 import ping
-import os
 import base64
 import threading
 import pyperclip
 
+
 proxies = []
 current_file = ""
+
 
 def extract_proxy_info(filepath):
     with open(filepath, 'r') as file:
@@ -36,7 +36,7 @@ def extract_proxy_info(filepath):
             elif line.startswith('ss://'):
                 config_type = 'SS'
                 proxy_info = line[9:]
-            elif line.startswith('ss://'):
+            elif line.startswith('ssr://'):
                 config_type = 'SSR'
                 proxy_info = line[9:]
             else:
@@ -51,10 +51,12 @@ def extract_proxy_info(filepath):
                     port = address_parts[1]
                     proxies.append((config_type, address, port, proxy_info))
 
+
 def select_file():
     filepath = filedialog.askopenfilename(filetypes=[('Text Files', '*.txt')])
     if filepath:
         ping_proxy(filepath)
+
 
 def ping_proxy(filepath=None):
     if filepath:
@@ -63,7 +65,7 @@ def ping_proxy(filepath=None):
         current_file = filepath
 
     root = tk.Tk()
-    root.title('Ping Results v1.2.0')
+    root.title('Ping Results v2.3.1')
 
     style = ttk.Style()
     style.theme_use('clam')
@@ -72,7 +74,25 @@ def ping_proxy(filepath=None):
     refresh_button.pack(pady=10)
 
     result_frame = ttk.Frame(root)
-    result_frame.pack()
+    result_frame.pack(fill=tk.BOTH, expand=True)
+
+    for index, proxy in enumerate(proxies):
+        config_type, address, port, proxy_info = proxy
+
+        result_label = ttk.Label(result_frame, text=f'{config_type} Config (Domain or IP: {address}): ')
+        result_label.grid(row=index, column=0, sticky='w', padx=10, pady=5)
+
+        response_label = ttk.Label(result_frame, text="Pinging...")
+        response_label.grid(row=index, column=1, padx=10, pady=5)
+
+        copy_button = ttk.Button(result_frame, text="Copy", command=lambda txt=proxy_info: copy_to_clipboard(txt))
+        copy_button.grid(row=index, column=2, padx=10, pady=5)
+
+        threading.Thread(target=ping_proxy_async, args=(address, response_label)).start()
+
+    root.update_idletasks()
+    root.mainloop()
+
 
     for proxy in proxies:
         config_type, address, port, proxy_info = proxy
@@ -92,18 +112,21 @@ def ping_proxy(filepath=None):
     root.geometry('500x430')
     root.mainloop()
 
+
 def ping_proxy_async(address, response_label):
     try:
         response_time = ping(address, timeout=1)
         if response_time is not None:
-            response_time_str = f'{response_time:.3f} ms'.rstrip('0')
+            response_time_str = '{:.0f} ms'.format(response_time * 1000)
             if response_time >= 100:
-                response_time_str = f'\033[91m{response_time_str}\033[0m'
-            response_label.config(text=response_time_str)
+                response_time_str = '\033[91m{}\033[0m'.format(response_time_str, foreground='red')
+            else:
+                response_label.config(text=response_time_str, foreground='green')
         else:
-            response_label.config(text="No response received")
+            response_label.config(text="failed", foreground='red')
     except Exception as e:
-        response_label.config(text=f"Error: {str(e)}")
+        response_label.config(text="Error: {}".format(str(e)), foreground='red')
+
 
 def refresh_results(root):
     root.destroy()
@@ -114,7 +137,7 @@ def copy_to_clipboard(txt):
 
 def create_gui():
     root = tk.Tk()
-    root.title('VCG Pinger v1.2.0')
+    root.title('VCG Pinger v2.3.1')
 
     style = ttk.Style()
     style.theme_use('clam')
@@ -128,11 +151,13 @@ def create_gui():
     y = (screen_height - window_height) // 2
 
     root.geometry(f'{window_width}x{window_height}+{x}+{y}')
+    root.resizable(False, False)
 
     select_button = ttk.Button(root, text='Select File', command=select_file)
     select_button.pack(pady=10)
 
     root.mainloop()
+
 
 if __name__ == "__main__":
     create_gui()

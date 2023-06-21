@@ -1,10 +1,12 @@
-PyQRCode==1.2.1
-qrcode==7.4.2
-requests==2.28.1
-rich==13.3.1
-datetime==5.1
-ping3==4.0.4
-pyperclip==1.8.2
-argparse==1.4
+PyQRCode
+qrcode
+requests
+rich
+pysftp
+PySimpleGUI
+ping3
+pyperclip
+argparse
+importlib
 
 # pip install -r requirements.txt
