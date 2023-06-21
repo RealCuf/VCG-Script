@@ -9,6 +9,17 @@
 <h1 align="center"/>Welcome to VCG Script</h1>
 
 <p align="center">
+	<a href="./README.md">
+	English
+	</a>
+	/
+	<a href="./README-fa.md">
+	فارسی
+	</a>
+
+</p>
+
+<p align="center">
 Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Config Generator</a> Easy Install With Few Clicks
 </p>
 
@@ -21,115 +32,190 @@ Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Confi
 ![GitHub](https://img.shields.io/github/license/RealCuf/VCG-Script?color=white&style=for-the-badge)
 
 </div>
-<hr>
 
-### فهرست
-- [معرفی](#معرفی)<br>
-- [امکانات](#امکانات)<br>
-- [آموزش](#آموزش) <br>
-# معرفی
-اسکریپت وی سی جی پروژه ایی هست که از چندین URL سابسکرایبشن مختلف ، کانفیگ هایی را دریافت میکند و برای شما تعدادی کانفیگ تصادفی که نوع آن را از قبل مشخص کرده اید نمایش میدهد و شما میتونید آن‌ کانفیگ را در یک فایل ذخیره یا QR کد برای آن‌ ها بسازید
+<br>
+<div align="center"> 
+  <img src="https://s6.uplod.ir/i/01098/mweuncjsrnst.png" alt="screenshot" width="850" height="auto"/>
+</div>  
+<br>
 
+<br>
 
-# امکانات
-:green_circle: متن باز و قابل ویرایش <br>
-:green_circle: تست و پینگ کانفیگ ها<br>
-:green_circle: استخراج کانفیگ های Reality <br>
-:green_circle: اعمال محدودیت در تعداد ساخت کانفیگ<br>
-:green_circle: امکان ذخیره کانفیگ ها و ساخت QR Code<br>
-:green_circle: تغییر لینک سابسکرایبشن به لینک دلخواه شما<br>
-:green_circle: پشتیبانی از Vmess , Vless , Trojan , ShadowSocks , ShadowSocksR<br>
+# Introduction
 
+**The VCG script is a project that receives the config from several different share URLs and displays some random config whose profile you specified earlier, and you can save that configuration in a file or create a QR code for them.**
+
+**If you think this project is helpful to you, you may wish to give a** :star2:
+
+**Buy Me a Coffee :**
+
+- Tron USDT (TRC20) : `?`
 
 ### Telegram Channel : [VCG Script](https://t.me/VCGScript)
 
-# آموزش
+<br>
 
-## پیش نیاز مرحله اول
-- نصب داشتن Git , Python
-- وارد ترمینال شوید و برای دانلود اسکریپت کافیست دستور زیر را وارد کنید
+# Features
+
+- Support vless - vmess - trojan - ss - ssr
+- Support for - xtls - tls - reality - Grpc - ws - tcp
+- Apply limits in the number of config
+- Save Configs & QR Code
+- Change the subs link
+- Pingtester
+- Open Source
+- Reality Checker
+- x-ui Backup
+- Upload File to Host
+
+<br>
+
+# Clone and Install Script
+
+Installing Python , Git
+
 ```
 git clone https://github.com/RealCuf/VCG-Script.git
-```
-- در C:\Users\System.name میتونید به سورس کد دسترسی داشته باشید
->  
-## نصب کتابخانه مرحله دوم
-- پس از نصب ، دستورات پایین را وارد کنید
-```
 cd VCG-Script
-```
-```
 pip install -r requirements.txt
-```
-## اجرای اسکریپت مرحله سوم
-- پس از نصب کامل کتابخانه ها ، برای اجرای اسکریپت دستور پایین رو وارد کنید
-```
 python main.py
 ```
-## آشنایی با محیط مرحله چهارم
-<a><img alt="VCG" src="https://i.ibb.co/nr837KD/image.png"></a>
-- وارد محیط اسکریپت شدید ، جدول زیر رو مطالعه کنید
-- میتونید برای ساخت کانفیگ ها از دستور مورد نظر و در قسمت OPTIONS از توضیحات جدول / اسکریپت استفاده کنید
-<br>
-
-|Number of configs|Vmess configs only|Vless configs only|Trojan configs only|Save configs to a file|Save QR codes|Reality Checker|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|-n| -v| -l| -t| -s| -q| -e|
-|--number| --vmess| --vless| --trojan| --save| --qr| --reality|
+> In C:\Users\System.name you can access the Source Code
 
 <br>
 
-- بطور مثال
-- معنی دستور : 10 عدد کانفیگ تروجان به همراه ذخیره کانفیگ ها + ساخت QR Code 
+# Familiarity with the environment
+
+Read the table below!
+You can use the desired command to create configs and in the OPTIONS section of the table / script description
+
+|Number of configs|Vmess configs only|Vless configs only|Trojan configs only|Save configs to a file|Save QR codes|Reality Checker|Pingtester|x-ui Backup|Upload File
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|-n| -v| -l| -t| -s| -q| -e| -p| -b| -o|
+
+Example :
+
 ````
 python main.py -n 10 -t -s -q
 ````
-## ساخت کانفیگ مرحله پنجم
-- سپس اطلاعات خواسته شده را وارد کنید و اینتر کنید تا مراحل ساخت انجام شود (فیلترشکن باید روشن باشد)
+> Command Meaning : 10 Trojan Configs with Config Save + QR Code Creation
 
-<a><img alt="VCG" src="https://i.ibb.co/V918gV3/Screenshot-2023-06-09-122424.png"></a>
+<br>
 
-## قابلیت Reality مرحله ششم
-- با اضافه کردن دستور زیر میتونید کانفیگ هایی که دارای پارامتر های Reality هستند را استخراج کنید
-> ممکنه زیاد دقیق نباشه و به درستی انجام نشه
-````
-python main.py -n 5 -l -s -q -e
-````
-- معنی دستور : 5 عدد کانفیگ وی لس که Reality دارند به همراه ذخیره کانفیگ ها + ساخت QR Code 
- 
-## استفاده از Config و QRCODE ها مرحله هفتم
-- پس از تکمیل ساخت برای دیدن کانفیگ ها از دستورات زیر استفاده کنید
-````
-start conf
-````
-````
-start qr
-````
-- در فولدر Conf ، کانفیگ ها در فایل txt ذخیره شدند
-- در فولدر QR ، کیو آر کد کانفیگ ها ذخیره شدند
-- حالا میتونید به راحتی ازشون استفاده کنید 🎁
+## All Command
 
-## پینگ گرفتن مرحله هشتم
-- برای پینگ گرفتن از فایل txt که حاوی تعدادی کانفیگ هست ، از دستور زیر استفاده کنید
-````
-python main.py -p
-````
-````
-python pingtester.py
-````
-- سپس روی Select File بزنید و در فولدر conf ، فایل txt مورد نظرتون رو انتخاب کنید
+<details>
+  <summary>Click for Command details</summary>
 
-<a><img alt="VCG" src="https://i.ibb.co/BTdbNLf/image.png"></a>
+<br>
 
-## آپدیت مرحله نهم
-- برای آپدیت اسکریپت وارد محل نصب شوید (C:\Users\System.name) و سپس فولدر VCG-Script را پاک کنید
-- مجدد از دستور نصب استفاده کنید
-> قبل از آپدیت از فولدر های conf و qr بک اپ بگیرید
-```
-git clone https://github.com/RealCuf/VCG-Script.git
-``` 
-## ویرایش سورس مرحله دهم
-- در بخش های DECODED_URLS , ENCODED_URLS میتونید لینک سابسکرایبشن دلخواه خودتون رو قرار بدید!
+Usage :  `python main.py [Options]`
+
+| Command | Alternative command               | Action                           |
+| :----: | ---------------------------------- | -------------------------------- |
+| `-n`  | `--number`                          | Number of Configs - Default : 5  |
+| `-v`  | `--vmess`                           | Vmess Configs only               |
+| `-l`  | `--vless`                           | Vless Configs only               |
+| `-t`  | `--trojan`                          | Trojan Configs only              |
+| `-h`  | `--shadowsocks`                     | ShadowSocks Configs only         |
+| `-a`  | `--shadowsocksr`                    | ShadowSocksR Configs only        |
+| `-r`  | `--reality`                         | Reality Checker                  |
+| `-s`  | `--save`                            | Save Configs                     |
+| `-q`  | `--qr`                              | Save QR codes                    |
+| `-b`  | `--backup`                          | x-ui Backup                      |
+| `-p`  | `--ping`                            | Pingtester                       |
+| `-o`  | `--host`                            | Upload File to Host              |
+| `-u`  | `--update`                          | Update Script                    |
+
+</details>
+
+<br>
+
+## Reality Checker
+
+<details>
+  <summary>Click for  Reality details</summary>
+
+  <br>
+  
+   - You can extract the config that has a Reality by adding a -r or -reality command.
+   ```
+   python main.py -n 10 -l -r -s -q
+   ```
+   > Command Meaning : 10 vless Configs with Config Save + QR Code Creation + Reality
+
+  <br>
+   
+</details>
+
+<br>
+
+## Ping Tester
+
+<details>
+  <summary>Click for Pingtester details</summary>
+
+  <br>
+  
+   - To ping a txt file that contains a number of config, use the following command
+   ```
+   python main.py -p
+   ```
+   - Then tap Select File and in the conf folder, select the txt file you want
+
+  <br>
+
+  <a><img alt="VCG" src="https://i.ibb.co/8M8xx38/image.png"></a>
+   
+</details>
+
+<br>
+
+## Update Script
+
+<details>
+  <summary>Click for Update details</summary>
+
+  <br>
+  
+   ```
+   python main.py -u
+   ```
+   > Backup conf and qr and database folders before updating
+   
+</details>
+
+<br>
+
+## X-ui Backup
+
+<details>
+  <summary>Click for  XuiBackup details</summary>
+
+  <br>
+  
+   - Use the following command to back up the panel
+   ```
+   python main.py -b
+   ```
+   - In the data section, write your server information
+> ip , port , user , password , remote_path
+
+  <br>
+   
+</details>
+
+<br>
+
+## Edit Source
+
+<details>
+  <summary>Click for Edit details</summary>
+
+  <br>
+
+- In the DECODED_URLS sections, ENCODED_URLS you can choose your favorite Subscribtion link!
+  
 ```python
 # URLs for configs not encoded in a base64 string
 DECODED_URLS = [
@@ -146,20 +232,30 @@ ENCODED_URLS = [
     "https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/Splitted-By-Protocol/trojan.txt",
 ]
 ```
+   
+</details>
+
 <br>
+
+# Libraries used in the project
+
+- Base64 - Datetime - OS - Random - Subprocess - Sys
+- Qrcode - Requests - Rich - Argparse - Time - Git
+- Tkinter - Ping3 - Threading - Pyperclip - Pysftp
+- PySimpleGUI - Ftplib - Webbrowser - Shutil
+
 <br>
 
-## Contact Developer
+# Contact Developer
+### Be sure to join the channel and support us
 
-💎 Discord : [Cuf#5566](http://discordapp.com/users/767770096319201290)
-
-💎 Twitter : [CybrDriver](https://twitter.com/CybrDriver)
-
-<a href="http://www.coffeete.ir/RealCuf"><img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:180px;"/></a>
+😶‍🌫️ Twitter : [CybrDriver](https://twitter.com/CybrDriver) -
+Channel : [Telegram](https://t.me/VCGScript)
 
 ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
 
+<br>
 
-## Stargazers over time
-![GitHub View](https://views.whatilearened.today/views/github/RealCuf/VCG-Script.svg)
+# Stargazers over time
+<!---![GitHub View](https://views.whatilearened.today/views/github/RealCuf/VCG-Script.svg)--->
 [![Stargazers over time](https://starchart.cc/RealCuf/VCG-Script.svg)](https://starchart.cc/RealCuf/VCG-Script)
