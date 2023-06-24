@@ -138,7 +138,7 @@ Usage :  `python main.py [Options]`
 
   <br>
   
-   - You can extract the config that has a Reality by adding a -r or -reality command.
+   - You can extract the config that has a Reality by adding a -r or --reality command.
    ```
    python main.py -n 10 -l -r -s -q
    ```
