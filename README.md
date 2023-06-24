@@ -257,5 +257,5 @@ Channel : [Telegram](https://t.me/VCGScript)
 <br>
 
 # Stargazers over time
-<!---![GitHub View](https://views.whatilearened.today/views/github/RealCuf/VCG-Script.svg)--->
+![GitHub View](https://views.whatilearened.today/views/github/RealCuf/VCG-Script.svg)
 [![Stargazers over time](https://starchart.cc/RealCuf/VCG-Script.svg)](https://starchart.cc/RealCuf/VCG-Script)
