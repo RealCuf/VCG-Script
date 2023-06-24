@@ -49,7 +49,7 @@ Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Confi
 
 **Buy Me a Coffee :**
 
-- Tron USDT (TRC20) : `?`
+- Tron USDT (TRC20) : `TDZccmYTC8AwK5vxwgbc9qPQ4VZHMkFgY4`
 
 ### Telegram Channel : [VCG Script](https://t.me/VCGScript)
 
