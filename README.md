@@ -35,7 +35,7 @@ Easy To Generat With <a href="https://github.com/RealCuf/VCG-Script">V2Ray Confi
 
 <br>
 <div align="center"> 
-  <img src="https://i.ibb.co/3hL8cHG/Screenshot-2023-07-12-151030.png" alt="screenshot" width="800" height="auto"/>
+  <img src="https://i.ibb.co/3hL8cHG/Screenshot-2023-07-12-151030.png" alt="screenshot" width="600" height="auto"/>
 </div>  
 <br>
 
