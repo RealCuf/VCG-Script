@@ -4,6 +4,7 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
 from ping3 import ping
+import json
 import base64
 import threading
 import pyperclip
@@ -49,7 +50,10 @@ def extract_proxy_info(filepath):
                 if len(address_parts) == 2:
                     address = address_parts[0]
                     port = address_parts[1]
-                    proxies.append((config_type, address, port, proxy_info))
+                    proxies.append((config_type, address, port, line))
+            elif config_type == 'Vmess':
+                proxy_info_dict = json.loads(proxy_info)
+                proxies.append((config_type, proxy_info_dict.get('add'), proxy_info_dict.get('port'), line))
 
 
 def select_file():
